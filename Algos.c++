@@ -12,7 +12,7 @@ private:
 
         for(auto &pile : piles)
         {
-            cntHrs += divide(y,x);
+            cntHrs += divide(pile,x);
         }
         return cntHrs<=height;
     }
