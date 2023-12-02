@@ -1,18 +1,14 @@
 class Solution {
 private:
-    int integerDivide(int x,int y){
-        return x%y==0 ? x/y : (x/y)+1;
-    }
-
     bool check(int x,vector<int>& piles,int height)
     {
         int cntHrs=0;
 
         // here koko can eat (x) bananas from a pile per hour
 
-        for(auto &y : piles)
+        for(auto &pile : piles)
         {
-            cntHrs += integerDivide(y,x);
+            cntHrs += (pile%x==0) ? pile/x : (pile/x)+1;
         }
         return cntHrs<=height;
     }
