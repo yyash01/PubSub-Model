@@ -10,7 +10,7 @@ private:
 
         // here koko can eat (x) bananas from a pile per hour
 
-        for(auto &y : piles)
+        for(auto &pile : piles)
         {
             cntHrs += divide(y,x);
         }
