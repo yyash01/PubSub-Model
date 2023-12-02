@@ -10,9 +10,9 @@ private:
 
         // here koko can eat (x) bananas from a pile per hour
 
-        for(auto &num : piles)
+        for(auto &pile : piles)
         {
-            cntHrs += integerDivide(num,x);
+            cntHrs += integerDivide(pile,x);
         }
         return cntHrs<=h;
     }
