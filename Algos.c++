@@ -1,6 +1,6 @@
 class Solution {
 private:
-    int integerDivide(int x,int y){
+    int divide(int x,int y){
         return x%y==0 ? x/y : (x/y)+1;
     }
 
@@ -12,7 +12,7 @@ private:
 
         for(auto &y : piles)
         {
-            cntHrs += integerDivide(y,x);
+            cntHrs += divide(y,x);
         }
         return cntHrs<=height;
     }
