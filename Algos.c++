@@ -4,17 +4,17 @@ private:
         return x%y==0 ? x/y : (x/y)+1;
     }
 
-    bool check(int x,vector<int>& piles,int h)
+    bool check(int x,vector<int>& piles,int height)
     {
         int cntHrs=0;
 
         // here koko can eat (x) bananas from a pile per hour
 
-        for(auto &num : piles)
+        for(auto &y : piles)
         {
-            cntHrs += integerDivide(num,x);
+            cntHrs += integerDivide(y,x);
         }
-        return cntHrs<=h;
+        return cntHrs<=height;
     }
 
 public:
