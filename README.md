@@ -7,5 +7,4 @@ Publisher Subscriber Model in LWC
     1. Publisher is JS file
     2. Subscriber is LWC add all EventListners in ConnectedCallback
     3. Have a publisher-subscriber connector provided by Salesforce 
-
 ```
